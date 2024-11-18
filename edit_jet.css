@@ -1,0 +1,145 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling for Edit Jet Page */
+body.edit-jet-page {
+    font-family: 'Playfair Display', serif; /* Elegant font */
+    background-color: #f8f9fa; /* Light gray background */
+    margin: 0;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh; /* Full viewport height */
+    padding: 1rem; /* Reduce padding for better use of space */
+    flex-direction: column;
+}
+
+/* Form Container */
+.edit-jet-page form {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px; /* Decrease the form width to fit better */
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    text-align: left; /* Left align labels and inputs */
+}
+
+/* Form Heading */
+.edit-jet-page h1 {
+    font-size: 2.2rem; /* Smaller heading to reduce space */
+    text-align: center;
+    color: #333333;
+    margin-bottom: 2rem;
+}
+
+/* Form Label Styling */
+.edit-jet-page label {
+    display: block;
+    font-size: 1.1rem; /* Smaller font size for labels */
+    color: #333333;
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+}
+
+/* Input Fields Styling */
+.edit-jet-page input, .edit-jet-page textarea {
+    width: 100%;
+    padding: 0.7rem; /* Reduced padding for inputs */
+    font-size: 1rem; /* Adjust font size for inputs */
+    margin-bottom: 1rem; /* Reduce space between fields */
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #f8f9fa;
+    box-sizing: border-box; /* Ensures padding is included in the width */
+}
+
+/* Textarea Styling */
+.edit-jet-page textarea {
+    height: 120px; /* Make the textarea smaller */
+    resize: vertical; /* Allow resizing only vertically */
+}
+
+/* Focused Input Field Styling */
+.edit-jet-page input:focus, .edit-jet-page textarea:focus {
+    border-color: #1a1a1a; /* Focus border color */
+    outline: none;
+}
+
+/* Submit Button Styling */
+.edit-jet-page button {
+    background-color: #1a1a1a; /* Dark background for the button */
+    color: #ffffff;
+    font-weight: bold;
+    padding: 0.8rem 1.8rem; /* Smaller button padding */
+    border: none;
+    border-radius: 6px;
+    text-align: center;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 1rem; /* Smaller button text size */
+    letter-spacing: 1px;
+}
+
+/* Button Hover Styling */
+.edit-jet-page button:hover {
+    background-color: #c4a484; /* Hover color - Gold accent */
+}
+
+/* Add some space below the form */
+.edit-jet-page form button {
+    margin-top: 1.5rem; /* Reduced space after button */
+}
+
+/* Media Queries for Responsiveness */
+
+/* For small screens (e.g., mobile phones) */
+@media (max-width: 600px) {
+    .edit-jet-page form {
+        padding: 1.5rem; /* Less padding on smaller screens */
+    }
+
+    .edit-jet-page h1 {
+        font-size: 1.8rem; /* Smaller heading for mobile */
+    }
+
+    .edit-jet-page input, .edit-jet-page textarea {
+        font-size: 0.9rem; /* Smaller font size for mobile */
+        padding: 0.6rem; /* Smaller padding for inputs */
+    }
+
+    .edit-jet-page button {
+        font-size: 0.9rem; /* Smaller button text */
+        padding: 0.8rem 1.5rem; /* Reduced button size */
+    }
+}
+
+/* For larger screens (tablets, desktops) */
+@media (min-width: 601px) {
+    .edit-jet-page form {
+        max-width: 600px; /* Form width reduced for better fit */
+    }
+
+    .edit-jet-page h1 {
+        font-size: 2.2rem; /* Default heading size */
+    }
+
+    .edit-jet-page input, .edit-jet-page textarea {
+        font-size: 1rem; /* Default input font size */
+        padding: 0.7rem; /* Default padding */
+    }
+
+    .edit-jet-page button {
+        font-size: 1rem; /* Default button text size */
+        padding: 0.8rem 1.8rem; /* Default button size */
+    }
+}
+

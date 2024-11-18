@@ -1,0 +1,113 @@
+/* Admin Dashboard Specific Styles */
+body {
+    font-family: 'Playfair Display', serif; /* Consistent font with the rest of the site */
+    background-color: #f8f9fa; /* Light gray background for consistency */
+    margin: 0;
+    line-height: 1.6;
+  }
+  
+  /* Admin Dashboard Header */
+  header {
+    background-color: #1a1a1a; /* Dark background to match the luxury feel of the site */
+    color: #ffffff;
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  header h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  
+  header nav a {
+    color: #ffffff;
+    margin-left: 2rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  header nav a:hover {
+    color: #c4a484; /* Gold hover effect */
+  }
+  
+  /* Admin Dashboard Main Content */
+  .admin-dashboard {
+    padding: 3rem 2rem;
+  }
+  
+  #jet-list h2 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 2rem;
+  }
+  
+  #jet-list p {
+    margin-bottom: 1.5rem;
+  }
+  
+  #jet-list .btn {
+    background-color: #1a1a1a; /* Dark button to keep in line with the theme */
+    color: #ffffff;
+    padding: 1rem 2rem;
+    border-radius: 6px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  #jet-list .btn:hover {
+    background-color: #c4a484; /* Gold accent */
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2rem;
+  }
+  
+  table th, table td {
+    padding: 1rem;
+    text-align: left;
+    border: 1px solid #ccc;
+  }
+  
+  table th {
+    background-color: #1a1a1a;
+    color: #ffffff;
+  }
+  
+  table tr:nth-child(even) {
+    background-color: #f8f9fa;
+  }
+  
+  table tr:hover {
+    background-color: #e9ecef;
+  }
+  
+  table .btn {
+    display: inline-block;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    text-align: center;
+    padding: 0.8rem 1.2rem;
+    margin-right: 1rem;
+    border-radius: 6px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.4s;
+    text-decoration: none;
+  }
+  
+  table .btn:hover {
+    background-color: #c4a484; /* Gold accent */
+  }

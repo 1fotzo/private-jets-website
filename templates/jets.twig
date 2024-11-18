@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Private Jets - Browse Jets</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+{% include 'header.twig' %}
+
+<!-- Main Content -->
+<main>
+<section id="search">
+    <div class="search-container">
+        <h2>Find Your Perfect Jet</h2>
+        <form action="jets.php" method="GET">
+            <div class="form-group">
+                <label for="price">Max Price:</label>
+                <input type="number" name="price" id="price" placeholder="e.g., 1000000">
+            </div>
+
+            <div class="form-group">
+                <label for="capacity">Minimum Seating Capacity:</label>
+                <input type="number" name="capacity" id="capacity" placeholder="e.g., 8">
+            </div>
+
+            <div class="form-group">
+                <label for="model">Model:</label>
+                <input type="text" name="model" id="model" placeholder="e.g., Gulfstream G650">
+            </div>
+
+            <div class="form-actions">
+                <button type="submit" class="btn">Search</button>
+            </div>
+        </form>
+    </div>
+</section>
+
+
+    <section id="jet-list">
+        <h3>Available Jets</h3>
+        <div class="jet-list">
+            {% for jet in jets %}
+                <div class="jet-card">
+                    <img src="images/{{ jet.image }}" alt="{{ jet.model_name }}" class="jet-image">
+                    <h4>{{ jet.model_name }}</h4>
+                    <p>Manufacturer: {{ jet.manufacturer }}</p>
+                    <p>Capacity: {{ jet.capacity }} passengers</p>
+                    <p>Price: $ {{ jet.price|number_format }}</p>
+                    <a href="contact.php?jet_id={{ jet.id }}" class="btn">Contact Seller</a>
+                    <a href="jet_details.php?id={{ jet.id }}" class="btn">View Details</a>
+                </div>
+            {% else %}
+                <p>No jets found based on your search criteria.</p>
+            {% endfor %}
+        </div>
+    </section>
+</main>
+
+{% include 'footer.twig' %}
+
+</body>
+</html>

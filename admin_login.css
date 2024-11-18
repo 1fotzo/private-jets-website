@@ -1,0 +1,103 @@
+/* Admin Login Specific Styles */
+body {
+    font-family: 'Playfair Display', serif; /* Elegant font */
+    background-color: #f8f9fa; /* Light gray background */
+    margin: 0;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    flex-direction: column; /* Stack children (header and form) vertically */
+}
+
+/* Admin Login Header */
+header {
+    text-align: center; /* Center header text */
+    margin-bottom: 2rem; /* Add space between header and form */
+}
+
+.admin-login {
+    background-color: #f8f9fa; /* Keeps background consistent with the site */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 2rem;
+}
+
+/* Admin Login Form */
+.admin-login form {
+    background-color: #ffffff;
+    padding: 3rem;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center; /* Align text to the center */
+}
+
+/* Form Heading */
+.admin-login h1 {
+    font-size: 2.5rem;
+    color: #333333;
+    margin-bottom: 2rem;
+    font-weight: bold;
+    text-align: center; /* Center align header */
+}
+
+/* Form Label Styling */
+.admin-login label {
+    display: block;
+    font-size: 1.2rem;
+    color: #333333;
+    margin-bottom: 0.5rem;
+}
+
+/* Input Fields Styling */
+.admin-login input {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #f8f9fa;
+    box-sizing: border-box; /* Ensures padding is included in the width */
+}
+
+/* Focused Input Field Styling */
+.admin-login input:focus {
+    border-color: #1a1a1a; /* Focus border color */
+    outline: none;
+}
+
+/* Button Styling */
+.admin-login .btn {
+    background-color: #1a1a1a; /* Dark background for the button */
+    color: #ffffff;
+    font-weight: bold;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 6px;
+    text-align: center;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+
+/* Button Hover Styling */
+.admin-login .btn:hover {
+    background-color: #c4a484; /* Hover color - Gold accent */
+}
+
+/* Error Message Styling */
+.admin-login .error {
+    color: red;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Private Jets - Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+{% include 'header.twig' %}
+
+<!-- Main Content -->
+<main>
+    <section id="intro">
+        <p>Explore our exclusive collection of luxury private jets, tailored for discerning travelers and businesses.</p>
+    </section>
+
+    <section id="about-section">
+            <h2>Our Mission</h2>
+            <p>
+                At Luxury Private Jets, we provide an exclusive selection of premium aircraft for the discerning traveler. 
+                Our mission is to deliver the highest standards in luxury, comfort, and service to our customers, 
+                ensuring a seamless flying experience every time. We offer a range of private jets for sale or lease, 
+                each one carefully chosen to meet the most stringent criteria for quality and performance.
+            </p>
+
+            <h2>Why Choose Us?</h2>
+            <ul>
+                <li>Wide range of luxury jets to meet diverse needs</li>
+                <li>Expert assistance throughout the buying and leasing process</li>
+                <li>Customizable options to fit your exact specifications</li>
+                <li>Ongoing customer support for peace of mind</li>
+            </ul>
+
+            <h2>Our History</h2>
+            <p>
+                Founded in 2020, Luxury Private Jets began as a small startup with a big vision: to revolutionize the way private aviation is accessed. Over the years, we've built strong relationships with jet manufacturers and operators, 
+                offering our customers exclusive access to some of the most sought-after aircraft in the world. 
+            </p>
+
+   <section id="featured-jets">
+    <h3>Featured Jets</h3>
+    <div class="jet-list">
+        {% for jet in jets %}
+            <div class="jet-card">
+                <img src="images/{{ jet.image }}" alt="{{ jet.model_name }}" class="jet-image">
+                <h4>{{ jet.model_name }}</h4>
+                <p>Manufacturer: {{ jet.manufacturer }}</p>
+                <p>Price: $ {{ jet.price|number_format }}</p>
+                <a href="jet_details.php?id={{ jet.id }}" class="btn">View Details</a>
+            </div>
+        {% else %}
+            <p>No jets available at the moment.</p>
+        {% endfor %}
+    </div>
+</section>
+</main>
+
+{% include 'footer.twig' %}
+
+</body>
+</html>

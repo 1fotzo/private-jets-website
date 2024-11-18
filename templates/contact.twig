@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Private Jets - Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+{% include 'header.twig' %}
+
+<!-- Main Content -->
+<main>
+    <section id="contact-form">
+        <h2>Get in Touch</h2>
+        <p>If you have any questions about our jets or need further assistance, please reach out!</p>
+        
+        <!-- Success message after form submission -->
+        {% if successMessage %}
+            <div class="message">
+                <p>{{ successMessage }}</p>
+            </div>
+        {% endif %}
+        
+        <form action="contact.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required>
+
+            <label for="message">Message:</label>
+            <textarea name="message" id="message" required></textarea>
+
+            <!-- Optional hidden input for jet_id if user is contacting about a specific jet -->
+            <input type="hidden" name="jet_id" value="{{ app.request.get('id') }}">
+
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </section>
+</main>
+
+{% include 'footer.twig' %}
+
+</body>
+</html>

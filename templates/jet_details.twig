@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ jet.model_name }} - Jet Details</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to your main CSS file -->
+</head>
+<body>
+    <div id="jet-details">
+        <h2>{{ jet.model_name }}</h2>
+        <img src="images/{{ jet.image }}" alt="{{ jet.model_name }}">
+
+        <!-- Specifications Section -->
+        <div class="jet-specs">
+            <h3>Jet Specifications</h3>
+            <ul>
+                <li><strong>Model Name:</strong> {{ jet.model_name }}</li>
+                <li><strong>Manufacturer:</strong> {{ jet.manufacturer }}</li>
+                <li><strong>Price:</strong> ${{ jet.price | number_format(0, ',', '.') }}</li>
+                <li><strong>Capacity:</strong> {{ jet.capacity }} passengers</li>
+                <li><strong>Range:</strong> {{ jet.range_km }} km</li>
+                <li><strong>Speed:</strong> {{ jet.speed_kmh }} km/h</li>
+                <li><strong>Status:</strong> {{ jet.availability_status }}</li>
+            </ul>
+        </div>
+
+        <!-- Navigation Links -->
+        <div class="back-link">
+            <a href="javascript:history.back()">Back</a> <!-- "Back" button to go to the previous page -->
+        </div>
+        <div class="contact-link">
+            <a href="contact_seller.php?jet_id={{ jet.id }}">Contact Seller</a> <!-- Link to contact the seller -->
+        </div>
+    </div>
+</body>
+</html>
+
