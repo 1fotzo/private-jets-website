@@ -1,0 +1,112 @@
+/* register page */
+
+#register-page {
+    font-family: 'Playfair Display', serif;
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Full viewport height */
+    padding: 1rem;
+    color: #333;
+  }
+  
+  #register-page main {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center text inside the form */
+    width: 100%;
+    max-width: 400px; /* Single centered box width */
+  }
+  
+  #register-page h2 {
+    font-size: 2rem;
+    color: #444;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    border-bottom: 2px solid #5a9;
+    padding-bottom: 0.5rem;
+  }
+  
+  #register-page form {
+    display: flex;
+    flex-direction: column; /* Align inputs and button vertically */
+    gap: 1rem; /* Space between inputs and buttons */
+    width: 100%;
+  }
+  
+  #register-page label {
+    text-align: left; /* Align labels to the left */
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  #register-page input[type="text"],
+  #register-page input[type="email"],
+  #register-page input[type="password"] {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: 0.3s ease;
+  }
+  
+  #register-page input[type="text"]:focus,
+  #register-page input[type="email"]:focus,
+  #register-page input[type="password"]:focus {
+    border-color: #5a9;
+    outline: none;
+    box-shadow: 0 0 5px rgba(90, 169, 90, 0.5);
+  }
+  
+  #register-page button.btn {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s ease;
+    width: 100%; /* Ensures the button spans the width of the box */
+  }
+  
+  #register-page button.btn:hover {
+    background-color: #5a9;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  #register-page div {
+    margin-top: 1.5rem;
+    text-align: center;
+  }
+  
+  #register-page div p {
+    margin-bottom: 0.5rem;
+  }
+  
+  #register-page div a button {
+    background-color: transparent;
+    color: #1a1a1a;
+    border: 1px solid #1a1a1a;
+    padding: 0.8rem 1.2rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s ease;
+    width: 100%; /* Consistent width for the link button */
+  }
+  
+  #register-page div a button:hover {
+    background-color: #5a9;
+    color: #fff;
+    border-color: #5a9;
+  }

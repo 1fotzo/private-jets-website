@@ -1,0 +1,119 @@
+/* JET DETAILS PAGE */
+
+/* Ensure the styling is scoped only to the jet details page */
+#jet-details {
+    font-family: 'Playfair Display', serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Full viewport height */
+    padding: 2rem;
+    color: #333;
+  }
+  
+  #jet-details h2 {
+    font-size: 2rem;
+    color: #444;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    border-bottom: 2px solid #5a9;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+  }
+  
+  #jet-details img {
+    width: 80%; /* Responsive image */
+    max-width: 600px;
+    height: auto;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  #jet-details p {
+    font-size: 1.1rem;
+    color: #555;
+    margin: 0.5rem 0;
+  }
+  
+  #jet-details p strong {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  #jet-details .price {
+    font-size: 1.4rem;
+    color: #5a9;
+    font-weight: bold;
+  }
+  
+  #jet-details .jet-specs {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  #jet-details .jet-specs h3 {
+    font-size: 1.5rem;
+    color: #444;
+    text-transform: uppercase;
+    border-bottom: 2px solid #5a9;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+  }
+  
+  #jet-details .jet-specs ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #jet-details .jet-specs li {
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+    color: #555;
+  }
+  
+  #jet-details .back-link,
+  #jet-details .contact-link {
+    margin-top: 2rem;
+    text-align: center;
+  }
+  
+  #jet-details .back-link a,
+  #jet-details .contact-link a {
+    text-decoration: none;
+    background-color: #1a1a1a;
+    color: white;
+    padding: 0.8rem 1.2rem;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+    display: inline-block;
+    margin: 0 0.5rem;
+  }
+  
+  #jet-details .back-link a:hover,
+  #jet-details .contact-link a:hover {
+    background-color: #c4a484;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  #jet-details .contact-link a {
+    background-color: #1a1a1a;
+    border: 2px solid #1a1a1a;
+    padding: 0.8rem 1.2rem;
+  }
+  
+  #jet-details .contact-link a:hover {
+    border-color: #c4a484;
+    background-color: #c4a484;
+  }

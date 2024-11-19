@@ -1,0 +1,210 @@
+/* index */
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Playfair Display', serif; /* Elegant font */
+    color: #333333;
+    background-color: #f8f9fa;
+    margin: 0;
+    line-height: 1.6;
+  }
+  
+  /* Header */
+  header {
+    background-color: #1a1a1a; /* Deep black for a luxury look */
+    color: #ffffff;
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  header h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  
+  header nav a {
+    color: #ffffff;
+    margin-left: 2rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  header nav a:hover {
+    color: #c4a484; /* Gold accent */
+  }
+  
+  /* Intro Section */
+  #intro {
+    text-align: center;
+    background-image: url('images/darkjet.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #ffffff;
+    padding: 10rem 2rem;
+    position: relative;
+  }
+  
+  #intro::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Adds a subtle overlay for text readability */
+    z-index: 1;
+  }
+  
+  #intro p {
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 2;
+    max-width: 800px;
+    margin: 0 auto;
+    z-index: 2;
+    position: relative;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Featured Jets Section */
+  #featured-jets {
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  
+  #featured-jets h3 {
+    font-size: 2.8rem;
+    color: #333333;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    letter-spacing: 0.5px;
+  }
+  
+  .jet-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 0 2rem;
+  }
+  
+  .jet-card {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.4s, box-shadow 0.4s;
+    position: relative;
+  }
+  
+  .jet-card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  .jet-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+  }
+  
+  .jet-card h4 {
+    font-size: 1.5rem;
+    color: #000000;
+    margin: 1rem;
+  }
+  
+  .jet-card p {
+    font-size: 1rem;
+    color: #666666;
+    margin: 0 1rem 1rem;
+  }
+  
+  .jet-card .btn {
+    display: inline-block;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    text-align: center;
+    padding: 0.8rem 1.2rem;
+    margin: 1rem;
+    border-radius: 6px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.4s;
+    text-decoration: none; /* Remove underlining */
+  }
+  
+  .jet-card .btn:hover {
+    background-color: #c4a484; /* Gold accent */
+    color: #ffffff;
+  }
+  
+  /* About Section */
+  #about-section {
+    padding: 4rem 2rem;
+    background-color: #f8f9fa;
+    text-align: center;
+  }
+  
+  #about-section h2 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 1.5rem;
+  }
+  
+  #about-section p, #about-section ul {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #666666;
+    max-width: 800px;
+    margin: 0 auto 2rem;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    text-align: center;
+    padding: 2rem 1rem;
+    font-size: 1rem;
+    line-height: 1.6;
+    border-top: 5px solid #c4a484;
+  }
+  
+  footer a {
+    color: #c4a484;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  footer a:hover {
+    color: #ffffff;
+  }

@@ -1,0 +1,100 @@
+/* contact us /*
+
+/* Contact Form Section */
+#contact-form {
+    padding: 4rem 2rem;
+    background-color: #f8f9fa; /* Light background for a clean look */
+    text-align: center;
+  }
+  
+  #contact-form h2 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 1.5rem;
+  }
+  
+  #contact-form p {
+    font-size: 1.2rem;
+    color: #666666;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+  }
+  
+  /* Success Message */
+  .message {
+    background-color: #e9f5e9; /* Light green background for success */
+    color: #2c662d; /* Dark green text for success message */
+    border: 1px solid #2c662d;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Form Styles */
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  form label {
+    display: block;
+    font-size: 1.2rem;
+    color: #333333;
+    margin-bottom: 0.5rem;
+    text-align: left;
+  }
+  
+  form input[type="text"], 
+  form input[type="email"], 
+  form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: 'Playfair Display', serif;
+    transition: border 0.3s;
+  }
+  
+  form input[type="text"]:focus, 
+  form input[type="email"]:focus, 
+  form textarea:focus {
+    border-color: #c4a484; /* Gold accent on focus */
+    outline: none;
+    box-shadow: 0 0 5px rgba(196, 164, 132, 0.5);
+  }
+  
+  form textarea {
+    resize: none; /* Prevent resizing */
+    height: 150px;
+  }
+  
+  form .btn {
+    display: block;
+    width: 100%;
+    background-color: #1a1a1a; /* Deep black for the button */
+    color: #ffffff;
+    text-align: center;
+    padding: 0.8rem 1.2rem;
+    margin-top: 1rem;
+    border-radius: 6px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.4s;
+  }
+  
+  form .btn:hover {
+    background-color: #c4a484; /* Gold accent */
+    color: #ffffff;
+  }

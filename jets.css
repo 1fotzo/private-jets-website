@@ -1,0 +1,200 @@
+/* jets */
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Playfair Display', serif; /* Luxury font */
+    color: #333333;
+    background-color: #f8f9fa;
+    margin: 0;
+    line-height: 1.6;
+  }
+  
+  /* Header and Footer */
+  header, footer {
+    background-color: #1a1a1a; /* Luxury black tone */
+    color: #ffffff;
+    padding: 1rem 2rem;
+  }
+  
+  header h1, footer {
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  
+  header nav a:hover, footer a:hover {
+    color: #c4a484; /* Gold accent */
+  }
+  
+  /* Search Section */
+  #search {
+    background-color: #ffffff;
+    padding: 4rem 2rem;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    margin: 2rem auto;
+    max-width: 900px;
+  }
+  
+  #search h2 {
+    font-size: 2.8rem;
+    color: #000000;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #c4a484; /* Gold accent */
+    display: inline-block;
+    padding-bottom: 0.5rem;
+  }
+  
+  form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    justify-content: center;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+  
+  .form-group label {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 0.5rem;
+  }
+  
+  .form-group input {
+    padding: 0.8rem 1rem;
+    border: 1px solid #dddddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .form-group input:focus {
+    outline: none;
+    border-color: #c4a484; /* Gold accent */
+    box-shadow: 0 0 8px rgba(196, 164, 132, 0.5); /* Glow effect */
+  }
+  
+  .form-actions {
+    grid-column: 1 / -1;
+    text-align: center;
+  }
+  
+  form .btn {
+    display: inline-block;
+    background-color: #1a1a1a; /* Luxury black */
+    color: #ffffff;
+    padding: 0.8rem 2rem;
+    border-radius: 6px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    text-decoration: none; /* Remove underlining */
+  }
+  
+  form .btn:hover {
+    background-color: #c4a484; /* Gold accent */
+    color: #ffffff;
+    transform: translateY(-3px); /* Slight hover lift */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Jet List Section */
+  #jet-list {
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  
+  #jet-list h3 {
+    font-size: 2.5rem;
+    color: #333333;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+  
+  .jet-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 0 2rem;
+  }
+  
+  .jet-card {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.4s, box-shadow 0.4s;
+  }
+  
+  .jet-card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  .jet-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .jet-card h4 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000000;
+    margin: 1rem;
+  }
+  
+  .jet-card p {
+    font-size: 1rem;
+    color: #555555;
+    margin: 0 1rem 1rem;
+  }
+  
+  .jet-card .btn {
+    display: inline-block;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    text-align: center;
+    padding: 0.8rem 1.2rem;
+    margin: 1rem;
+    border-radius: 6px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.4s;
+    text-decoration: none; /* Remove underlining */
+  }
+  
+  .jet-card .btn:hover {
+    background-color: #c4a484; /* Gold accent */
+    color: #ffffff;
+  }
+  
+  /* No Results Message */
+  #jet-list p {
+    font-size: 1.2rem;
+    color: #999999;
+    margin-top: 2rem;
+    text-align: center;
+    font-style: italic;
+  }
