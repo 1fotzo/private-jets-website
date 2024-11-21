@@ -1,100 +1,224 @@
-/* contact us /*
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Playfair Display', serif;
+  line-height: 1.6;
+  background-color: #ffffff; /* Light background */
+  color: #333333;
+}
+
+/* Header */
+header {
+  background-color: #1a1a1a; /* Deep black for a luxury look */
+  color: #ffffff;
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%; /* Ensure it spans the entire top */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+header nav {
+  display: flex;
+  gap: 2rem;
+}
+
+header nav a {
+  color: #ffffff;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+header nav a:hover {
+  color: #c4a484; /* Gold accent */
+}
 
 /* Contact Form Section */
 #contact-form {
-    padding: 4rem 2rem;
-    background-color: #f8f9fa; /* Light background for a clean look */
-    text-align: center;
+  padding: 4rem 1rem;
+  background-color: #f8f9fa; /* Light background for a clean look */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh; /* Ensures it takes up full screen */
+}
+
+#contact-form h2 {
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 1.5rem;
+}
+
+#contact-form p {
+  font-size: 1.2rem;
+  color: #666666;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+
+/* Success Message */
+.message {
+  background-color: #e9f5e9; /* Light green background for success */
+  color: #2c662d; /* Dark green text for success message */
+  border: 1px solid #2c662d;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Styles */
+form {
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+  display: block;
+  font-size: 1.2rem;
+  color: #333333;
+  margin-bottom: 0.5rem;
+  text-align: left;
+}
+
+form input[type="text"], 
+form input[type="email"], 
+form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: 'Playfair Display', serif;
+  transition: border 0.3s;
+}
+
+form input[type="text"]:focus, 
+form input[type="email"]:focus, 
+form textarea:focus {
+  border-color: #c4a484; /* Gold accent on focus */
+  outline: none;
+  box-shadow: 0 0 5px rgba(196, 164, 132, 0.5);
+}
+
+form textarea {
+  resize: none; /* Prevent resizing */
+  height: 150px;
+}
+
+form .btn {
+  display: block;
+  width: 100%;
+  background-color: #1a1a1a; /* Deep black for the button */
+  color: #ffffff;
+  text-align: center;
+  padding: 0.8rem 1.2rem;
+  margin-top: 1rem;
+  border-radius: 6px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.4s;
+}
+
+form .btn:hover {
+  background-color: #c4a484; /* Gold accent */
+  color: #ffffff;
+}
+
+/* Footer */
+footer {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 1rem;
+  line-height: 1.6;
+  border-top: 5px solid #c4a484;
+}
+
+footer a {
+  color: #c4a484;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: #ffffff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
   }
-  
-  #contact-form h2 {
-    font-size: 2.4rem;
-    font-weight: bold;
-    color: #000000;
-    margin-bottom: 1.5rem;
+
+  header h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
   }
-  
-  #contact-form p {
-    font-size: 1.2rem;
-    color: #666666;
-    line-height: 1.8;
-    margin-bottom: 2rem;
+
+  header nav {
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
   }
-  
-  /* Success Message */
-  .message {
-    background-color: #e9f5e9; /* Light green background for success */
-    color: #2c662d; /* Dark green text for success message */
-    border: 1px solid #2c662d;
-    padding: 1rem 2rem;
-    border-radius: 8px;
-    margin-bottom: 2rem;
-    font-size: 1.2rem;
-    max-width: 600px;
-    margin: 0 auto 2rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  #contact-form {
+    padding: 2rem 1rem;
   }
-  
-  /* Form Styles */
+
   form {
-    max-width: 600px;
-    margin: 0 auto;
-    background-color: #ffffff;
-    padding: 2rem;
-    border-radius: 12px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
   }
-  
+
   form label {
-    display: block;
-    font-size: 1.2rem;
-    color: #333333;
-    margin-bottom: 0.5rem;
-    text-align: left;
+    font-size: 1rem;
   }
-  
+
   form input[type="text"], 
   form input[type="email"], 
   form textarea {
-    width: 100%;
-    padding: 0.8rem;
-    margin-bottom: 1.5rem;
-    border: 1px solid #cccccc;
-    border-radius: 8px;
-    font-size: 1rem;
-    font-family: 'Playfair Display', serif;
-    transition: border 0.3s;
+    font-size: 0.9rem;
   }
-  
-  form input[type="text"]:focus, 
-  form input[type="email"]:focus, 
-  form textarea:focus {
-    border-color: #c4a484; /* Gold accent on focus */
-    outline: none;
-    box-shadow: 0 0 5px rgba(196, 164, 132, 0.5);
-  }
-  
-  form textarea {
-    resize: none; /* Prevent resizing */
-    height: 150px;
-  }
-  
+
   form .btn {
-    display: block;
-    width: 100%;
-    background-color: #1a1a1a; /* Deep black for the button */
-    color: #ffffff;
-    text-align: center;
-    padding: 0.8rem 1.2rem;
-    margin-top: 1rem;
-    border-radius: 6px;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    transition: all 0.4s;
+    font-size: 0.9rem;
+    padding: 0.6rem 1rem;
   }
-  
-  form .btn:hover {
-    background-color: #c4a484; /* Gold accent */
-    color: #ffffff;
+
+  footer {
+    font-size: 0.9rem;
+    padding: 1rem 0.5rem;
   }
+}

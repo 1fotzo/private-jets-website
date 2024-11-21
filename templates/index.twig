@@ -9,7 +9,22 @@
 </head>
 <body>
 
-{% include 'header.twig' %}
+    <header>
+    <h1>Luxury Private Jets</h1>
+    <nav>
+        <a href="index.php">Home</a>
+        <a href="jets.php">Browse Jets</a>
+        <a href="contact.php">Contact Us</a>
+
+        {% if is_logged_in %}
+            <a href="user_dashboard.php">My Account</a>
+            <a href="user_logout.php">Logout</a>
+        {% else %}
+            <a href="user_login.php">Login</a>
+            <a href="user_register.php">Register</a>
+        {% endif %}
+    </nav>
+</header>
 
 <!-- Main Content -->
 <main>
@@ -60,7 +75,10 @@
     </section>
 </main>
 
-{% include 'footer.twig' %}
+<footer>
+    <p>&copy; {{ "now"|date("Y") }} Luxury Private Jets. All rights reserved.</p>
+    <a href="admin_login.php">Admin Login</a>
+</footer>
 
 </body>
 </html>

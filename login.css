@@ -1,119 +1,115 @@
-/* Login Page */
-
-/* Scoped Styles */
 #login-page {
-    font-family: 'Playfair Display', serif;
-    background-color: #f4f4f4;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    padding: 1rem;
-    color: #333;
-  }
-  
-  #login-page h2 {
-    font-size: 2rem;
-    text-align: center;
-    color: #444;
-    margin-bottom: 1.5rem;
-    text-transform: uppercase;
-    border-bottom: 2px solid #c4a484;
-    display: inline-block;
-    padding-bottom: 0.5rem;
-  }
-  
-  #login-page form {
-    background-color: #fff;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 400px;
-  }
-  
-  #login-page label {
-    display: block;
-    font-size: 1rem;
-    margin-bottom: 0.5rem;
-    color: #555;
-  }
-  
-  #login-page input[type="text"],
-  #login-page input[type="password"] {
-    width: 100%;
-    padding: 0.8rem;
-    margin-bottom: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1rem;
-    transition: 0.3s ease;
-  }
-  
-  #login-page input[type="text"]:focus,
-  #login-page input[type="password"]:focus {
-    border-color: #c4a484;
-    outline: none;
-    box-shadow: 0 0 5px rgba(196, 164, 132, 0.5);
-  }
-  
-  #login-page input[type="checkbox"] {
-    margin-right: 0.5rem;
-  }
-  
-  #login-page button[type="submit"] {
-    background-color: #1a1a1a;
-    color: #fff;
-    padding: 0.8rem 1.2rem;
-    border: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: 0.3s ease;
-    margin-top: 0.5rem;
-    width: 100%;
-  }
-  
-  #login-page button[type="submit"]:hover {
-    background-color: #c4a484;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
-  
-  #login-page p {
-    color: red;
-    font-size: 0.9rem;
-    margin-top: 1rem;
-    text-align: center;
-  }
-  
-  #login-page div {
-    margin-top: 1.5rem;
-    text-align: center;
-  }
-  
-  #login-page div button {
-    background-color: transparent;
-    color: #1a1a1a;
-    border: 1px solid #1a1a1a;
-    padding: 0.8rem 1.2rem;
-    border-radius: 5px;
-    font-size: 1rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: 0.3s ease;
-  }
-  
-  #login-page div button:hover {
-    background-color: #c4a484;
-    color: #fff;
-    border-color: #c4a484;
-  }
-  
-  #login-page a button {
-    margin-left: 0.5rem;
-  }
+  font-family: 'Playfair Display', serif;
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 1rem;
+  color: #333;
+}
+
+#login-page h2 {
+  font-size: 2rem;
+  text-align: center;
+  color: #444;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  border-bottom: 2px solid #c4a484;
+  display: inline-block;
+  padding-bottom: 0.5rem;
+}
+
+#login-page form {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column; /* Ensures all elements are vertically aligned */
+  align-items: center; /* Center align elements horizontally */
+}
+
+#login-page label {
+  align-self: flex-start; /* Align labels to the left */
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #555;
+}
+
+#login-page input[type="text"],
+#login-page input[type="password"] {
+  width: 100%; /* Full width of the form container */
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: 0.3s ease;
+}
+
+#login-page input[type="text"]:focus,
+#login-page input[type="password"]:focus {
+  border-color: #c4a484;
+  outline: none;
+  box-shadow: 0 0 5px rgba(196, 164, 132, 0.5);
+}
+
+#login-page button[type="submit"] {
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.3s ease;
+  width: 100%; /* Matches input fields */
+  margin-top: 0.5rem;
+}
+
+#login-page button[type="submit"]:hover {
+  background-color: #c4a484;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#login-page p {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+#login-page div {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+#login-page div button {
+  background-color: transparent;
+  color: #1a1a1a;
+  border: 1px solid #1a1a1a;
+  padding: 0.8rem 1.2rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+#login-page div button:hover {
+  background-color: #c4a484;
+  color: #fff;
+  border-color: #c4a484;
+}
+
+#login-page a button {
+  margin-left: 0.5rem;
+}

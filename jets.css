@@ -15,21 +15,37 @@
     line-height: 1.6;
   }
   
-  /* Header and Footer */
-  header, footer {
-    background-color: #1a1a1a; /* Luxury black tone */
-    color: #ffffff;
-    padding: 1rem 2rem;
-  }
-  
-  header h1, footer {
-    font-size: 1.8rem;
-    font-weight: bold;
-  }
-  
-  header nav a:hover, footer a:hover {
-    color: #c4a484; /* Gold accent */
-  }
+/* Header */
+header {
+  background-color: #1a1a1a; /* Deep black for a luxury look */
+  color: #ffffff;
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+header nav a {
+  color: #ffffff;
+  margin-left: 2rem;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+header nav a:hover {
+  color: #c4a484; /* Gold accent */
+}
   
   /* Search Section */
   #search {
@@ -199,6 +215,27 @@
     font-style: italic;
   }
 
+  /* Footer */
+footer {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 1rem;
+  line-height: 1.6;
+  border-top: 5px solid #c4a484;
+}
+
+footer a {
+  color: #c4a484;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: #ffffff;
+}
+
   #autocomplete-results {
     position: absolute;
     background-color: #fff;
@@ -218,3 +255,55 @@
     background-color: #f1f1f1;  /* Highlight the item on hover */
 }
 
+/* Responsive Design */
+
+/* iPhone 14 (390px width) */
+@media (max-width: 390px) {
+  header h1 {
+    font-size: 1.4rem;
+  }
+
+  header nav {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  #search {
+    padding: 2rem 1rem;
+  }
+
+  #search h2 {
+    font-size: 1.8rem;
+  }
+
+  form {
+    grid-template-columns: 1fr;
+  }
+
+  .jet-card img {
+    height: 150px;
+  }
+}
+
+/* iPad (768px width) */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  header nav {
+    gap: 1.5rem;
+  }
+
+  #search {
+    max-width: 100%;
+  }
+
+  .jet-list {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  .jet-card img {
+    height: 180px;
+  }
+}
