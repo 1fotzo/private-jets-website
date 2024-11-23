@@ -1,14 +1,13 @@
-/* Admin Dashboard Specific Styles */
 body {
-    font-family: 'Playfair Display', serif; /* Consistent font with the rest of the site */
-    background-color: #f8f9fa; /* Light gray background for consistency */
+    font-family: 'Playfair Display', serif; 
+    background-color: #f8f9fa; 
     margin: 0;
     line-height: 1.6;
   }
   
   /* Admin Dashboard Header */
   header {
-    background-color: #1a1a1a; /* Dark background to match the luxury feel of the site */
+    background-color: #1a1a1a; 
     color: #ffffff;
     padding: 1.5rem 2rem;
     display: flex;
@@ -35,7 +34,7 @@ body {
   }
   
   header nav a:hover {
-    color: #c4a484; /* Gold hover effect */
+    color: #c4a484; 
   }
   
   /* Admin Dashboard Main Content */
@@ -55,7 +54,7 @@ body {
   }
   
   #jet-list .btn {
-    background-color: #1a1a1a; /* Dark button to keep in line with the theme */
+    background-color: #1a1a1a; 
     color: #ffffff;
     padding: 1rem 2rem;
     border-radius: 6px;
@@ -65,7 +64,7 @@ body {
   }
   
   #jet-list .btn:hover {
-    background-color: #c4a484; /* Gold accent */
+    background-color: #c4a484; 
   }
   
   table {
@@ -109,5 +108,5 @@ body {
   }
   
   table .btn:hover {
-    background-color: #c4a484; /* Gold accent */
+    background-color: #c4a484; 
   }

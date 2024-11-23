@@ -1,8 +1,6 @@
 <?php
-// Start the session
 session_start();
 
-// Include the database connection
 include 'db_connect.php';
 
 // Check if the form is submitted
@@ -46,16 +44,14 @@ $conn->close();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Login</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="admin_login.css"> <!-- New Admin Specific Styles -->
+    <link rel="stylesheet" href="admin_login.css"> 
 </head>
 <body>
 
-    <!-- Header -->
     <header>
         <h1>Admin Login</h1>
     </header>
 
-    <!-- Main Content -->
     <main class="admin-login">
         <form action="admin_login.php" method="POST">
             <label for="username">Username:</label>

@@ -1,5 +1,4 @@
 <?php
-// Include the database connection
 include 'db_connect.php';
 
 // Check if the form is submitted
@@ -13,7 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $speed_kmh = (int)$_POST['speed_kmh'];
     $availability_status = $conn->real_escape_string($_POST['availability_status']);
     $description = $conn->real_escape_string($_POST['description']);
-    $image = $conn->real_escape_string($_POST['image']); // Image file path
+    $image = $conn->real_escape_string($_POST['image']); 
 
     // SQL query to insert the new jet into the database
     $query = "INSERT INTO jets (model_name, manufacturer, price, capacity, range_km, speed_kmh, availability_status, description, image) 
@@ -25,7 +24,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         echo "<p>Error adding jet: " . $conn->error . "</p>";
     }
 
-    // Close the database connection
     $conn->close();
 }
 ?>

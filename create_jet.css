@@ -1,4 +1,3 @@
-/* General Reset */
 * {
     margin: 0;
     padding: 0;
@@ -7,15 +6,15 @@
 
 /* Body Styling for Add New Jet Page */
 body.add-jet-page {
-    font-family: 'Playfair Display', serif; /* Elegant font */
-    background-color: #f8f9fa; /* Light gray background */
+    font-family: 'Playfair Display', serif; 
+    background-color: #f8f9fa; 
     margin: 0;
     line-height: 1.6;
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    min-height: 100vh; /* Full viewport height */
-    padding: 1rem; /* Reduce padding for better use of space */
+    min-height: 100vh; 
+    padding: 1rem; 
     flex-direction: column;
 }
 
@@ -26,15 +25,15 @@ body.add-jet-page {
     border-radius: 8px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     width: 100%;
-    max-width: 600px; /* Decrease the form width to fit better */
+    max-width: 600px; 
     margin-top: 3rem;
     margin-bottom: 2rem;
-    text-align: left; /* Left align labels and inputs */
+    text-align: left; 
 }
 
 /* Form Heading */
 .add-jet-page h1 {
-    font-size: 2.2rem; /* Smaller heading to reduce space */
+    font-size: 2.2rem; 
     text-align: center;
     color: #333333;
     margin-bottom: 2rem;
@@ -43,7 +42,7 @@ body.add-jet-page {
 /* Form Label Styling */
 .add-jet-page label {
     display: block;
-    font-size: 1.1rem; /* Smaller font size for labels */
+    font-size: 1.1rem; 
     color: #333333;
     margin-bottom: 0.5rem;
     margin-top: 1rem;
@@ -52,56 +51,56 @@ body.add-jet-page {
 /* Input Fields Styling */
 .add-jet-page input, .add-jet-page textarea {
     width: 100%;
-    padding: 0.7rem; /* Reduced padding for inputs */
-    font-size: 1rem; /* Adjust font size for inputs */
-    margin-bottom: 1rem; /* Reduce space between fields */
+    padding: 0.7rem; 
+    font-size: 1rem; 
+    margin-bottom: 1rem; 
     border: 1px solid #ccc;
     border-radius: 6px;
     background-color: #f8f9fa;
-    box-sizing: border-box; /* Ensures padding is included in the width */
+    box-sizing: border-box; 
 }
 
 /* Textarea Styling */
 .add-jet-page textarea {
-    height: 120px; /* Make the textarea smaller */
-    resize: vertical; /* Allow resizing only vertically */
+    height: 120px; 
+    resize: vertical; 
 }
 
 /* Focused Input Field Styling */
 .add-jet-page input:focus, .add-jet-page textarea:focus {
-    border-color: #1a1a1a; /* Focus border color */
+    border-color: #1a1a1a;
     outline: none;
 }
 
 /* Submit Button Styling */
 .add-jet-page button {
-    background-color: #1a1a1a; /* Dark background for the button */
+    background-color: #1a1a1a; 
     color: #ffffff;
     font-weight: bold;
-    padding: 0.8rem 1.8rem; /* Smaller button padding */
+    padding: 0.8rem 1.8rem; 
     border: none;
     border-radius: 6px;
     text-align: center;
     width: 100%;
     cursor: pointer;
     transition: background-color 0.3s;
-    font-size: 1rem; /* Smaller button text size */
+    font-size: 1rem; 
     letter-spacing: 1px;
 }
 
 /* Button Hover Styling */
 .add-jet-page button:hover {
-    background-color: #c4a484; /* Hover color - Gold accent */
+    background-color: #c4a484; 
 }
 
 /* Add some space below the form */
 .add-jet-page form button {
-    margin-top: 1.5rem; /* Reduced space after button */
+    margin-top: 1.5rem; 
 }
 
 /* Media Queries for Responsiveness */
 
-/* For small screens (e.g., mobile phones) */
+/* For small screens */
 @media (max-width: 600px) {
     .add-jet-page form {
         padding: 1.5rem; /* Less padding on smaller screens */
@@ -122,7 +121,7 @@ body.add-jet-page {
     }
 }
 
-/* For larger screens (tablets, desktops) */
+/* For larger screens */
 @media (min-width: 601px) {
     .add-jet-page form {
         max-width: 600px; /* Form width reduced for better fit */

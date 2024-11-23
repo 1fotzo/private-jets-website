@@ -2,7 +2,6 @@
 
 require_once 'vendor/autoload.php';
 
-// Include database connection
 include 'db_connect.php';
 
 // Fetch featured jets from the database

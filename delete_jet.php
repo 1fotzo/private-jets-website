@@ -1,5 +1,4 @@
 <?php
-// Include the database connection
 include 'db_connect.php';
 
 // Check if the jet ID is provided
@@ -15,7 +14,6 @@ if (isset($_GET['id'])) {
         echo "<p>Error deleting jet: " . $conn->error . "</p>";
     }
 
-    // Close the database connection
     $conn->close();
 }
 ?>

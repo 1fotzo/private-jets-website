@@ -1,4 +1,3 @@
-/* General Reset */
 * {
   margin: 0;
   padding: 0;
@@ -9,13 +8,13 @@
 body {
   font-family: 'Playfair Display', serif;
   line-height: 1.6;
-  background-color: #ffffff; /* Light background */
+  background-color: #ffffff; 
   color: #333333;
 }
 
 /* Header */
 header {
-  background-color: #1a1a1a; /* Deep black for a luxury look */
+  background-color: #1a1a1a; 
   color: #ffffff;
   padding: 1.5rem 2rem;
   display: flex;
@@ -24,7 +23,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 1000;
-  width: 100%; /* Ensure it spans the entire top */
+  width: 100%; 
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -47,18 +46,18 @@ header nav a {
 }
 
 header nav a:hover {
-  color: #c4a484; /* Gold accent */
+  color: #c4a484; 
 }
 
 /* Contact Form Section */
 #contact-form {
   padding: 4rem 1rem;
-  background-color: #f8f9fa; /* Light background for a clean look */
+  background-color: #f8f9fa; 
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  min-height: 100vh; /* Ensures it takes up full screen */
+  min-height: 100vh; 
 }
 
 #contact-form h2 {
@@ -77,8 +76,8 @@ header nav a:hover {
 
 /* Success Message */
 .message {
-  background-color: #e9f5e9; /* Light green background for success */
-  color: #2c662d; /* Dark green text for success message */
+  background-color: #e9f5e9; 
+  color: #2c662d; 
   border: 1px solid #2c662d;
   padding: 1rem 2rem;
   border-radius: 8px;
@@ -124,20 +123,20 @@ form textarea {
 form input[type="text"]:focus, 
 form input[type="email"]:focus, 
 form textarea:focus {
-  border-color: #c4a484; /* Gold accent on focus */
+  border-color: #c4a484; 
   outline: none;
   box-shadow: 0 0 5px rgba(196, 164, 132, 0.5);
 }
 
 form textarea {
-  resize: none; /* Prevent resizing */
+  resize: none; 
   height: 150px;
 }
 
 form .btn {
   display: block;
   width: 100%;
-  background-color: #1a1a1a; /* Deep black for the button */
+  background-color: #1a1a1a; 
   color: #ffffff;
   text-align: center;
   padding: 0.8rem 1.2rem;
@@ -150,7 +149,7 @@ form .btn {
 }
 
 form .btn:hover {
-  background-color: #c4a484; /* Gold accent */
+  background-color: #c4a484; 
   color: #ffffff;
 }
 

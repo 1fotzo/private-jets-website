@@ -51,7 +51,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <link rel="stylesheet" href="login.css">
 </head>
 <body>
-    <div id="login-page"> <!-- Added container for scoping -->
+    <div id="login-page"> 
         <h2>User Login</h2>
         <form method="POST" action="user_login.php">
             <label for="username">Username:</label>
@@ -70,9 +70,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <?php if (isset($error)) echo "<p style='color:red;'>$error</p>"; ?>
 
         <div>
-            <!-- Home Button -->
             <a href="index.php"><button type="button">Home</button></a>
-            <!-- Create Account Button -->
             <a href="user_register.php"><button type="button">Create Account</button></a>
         </div>
     </div>

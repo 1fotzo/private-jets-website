@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="register.css">
 </head>
 <body>
-    <div id="register-page"> <!-- Added container for scoping -->
+    <div id="register-page"> 
         <main>
             <h2>Register</h2>
             <form action="user_register_process.php" method="POST">

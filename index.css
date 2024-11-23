@@ -1,4 +1,3 @@
-/* General Reset */
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +5,7 @@
 }
 
 body {
-  font-family: 'Playfair Display', serif; /* Elegant font */
+  font-family: 'Playfair Display', serif; 
   color: #333333;
   background-color: #f8f9fa;
   margin: 0;
@@ -15,7 +14,7 @@ body {
 
 /* Header */
 header {
-  background-color: #1a1a1a; /* Deep black for a luxury look */
+  background-color: #1a1a1a; 
   color: #ffffff;
   padding: 1.5rem 2rem;
   display: flex;
@@ -42,7 +41,7 @@ header nav a {
 }
 
 header nav a:hover {
-  color: #c4a484; /* Gold accent */
+  color: #c4a484; 
 }
 
 /* Intro Section */
@@ -64,7 +63,7 @@ header nav a:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.4); /* Adds a subtle overlay for text readability */
+  background: rgba(0, 0, 0, 0.4); 
   z-index: 1;
 }
 
@@ -98,30 +97,30 @@ header nav a:hover {
 }
 
 #about-section h2 {
-  font-size: 2.8rem; /* Slightly larger for emphasis */
+  font-size: 2.8rem; 
   font-weight: bold;
-  color: #1a1a1a; /* Darker black for elegance */
+  color: #1a1a1a; 
   margin-bottom: 1.5rem;
 }
 
 #about-section p {
-  font-size: 1.4rem; /* Slightly larger for a luxurious feel */
+  font-size: 1.4rem; 
   line-height: 2;
-  color: #4a4a4a; /* Soft gray for readability */
+  color: #4a4a4a; 
   max-width: 800px;
   margin: 0 auto 2rem;
-  text-align: justify; /* Professional alignment */
-  font-weight: 300; /* Light font for elegance */
+  text-align: justify; 
+  font-weight: 300;
   letter-spacing: 0.5px;
 }
 
 #about-section ul {
-  font-size: 1.4rem; /* Matches the paragraph size */
+  font-size: 1.4rem; 
   line-height: 1.8;
   color: #4a4a4a;
   max-width: 800px;
   margin: 0 auto 2rem;
-  text-align: left; /* Keeps bullet points aligned */
+  text-align: left; 
   list-style-position: inside;
 }
 
@@ -197,11 +196,11 @@ header nav a:hover {
   text-transform: uppercase;
   letter-spacing: 1px;
   transition: all 0.4s;
-  text-decoration: none; /* Remove underlining */
+  text-decoration: none; 
 }
 
 .jet-card .btn:hover {
-  background-color: #c4a484; /* Gold accent */
+  background-color: #c4a484; 
   color: #ffffff;
 }
 

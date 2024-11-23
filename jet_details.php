@@ -1,8 +1,7 @@
 <?php
-// Include database connection
 include 'db_connect.php';
 
-// Get the jet ID from the URL (passed as a query string parameter)
+// Get the jet ID from the URL 
 if (isset($_GET['id'])) {
     $jet_id = intval($_GET['id']); // Ensure the id is an integer to prevent SQL injection
 
@@ -21,9 +20,9 @@ if (isset($_GET['id'])) {
 }
 
 // Include the Twig autoloader and setup
-require_once 'vendor/autoload.php'; // Include Twig if it's installed with Composer
+require_once 'vendor/autoload.php'; 
 
-$loader = new \Twig\Loader\FilesystemLoader('templates'); // Path to your templates directory
+$loader = new \Twig\Loader\FilesystemLoader('templates');
 $twig = new \Twig\Environment($loader);
 
 echo $twig->render('jet_details.twig', ['jet' => $jet]); // Pass jet data to Twig template

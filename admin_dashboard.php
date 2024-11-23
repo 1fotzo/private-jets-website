@@ -1,5 +1,4 @@
 <?php
-// Include the database connection and session management
 include 'db_connect.php';
 session_start();
 
@@ -21,11 +20,10 @@ $result = $conn->query($query);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard - Manage Jets</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="admin_dashboard.css"> <!-- New Admin Dashboard Specific Styles -->
+    <link rel="stylesheet" href="admin_dashboard.css"> 
 </head>
 <body>
 
-    <!-- Header -->
     <header>
         <h1>Admin Dashboard</h1>
         <nav>
@@ -34,7 +32,6 @@ $result = $conn->query($query);
         </nav>
     </header>
 
-    <!-- Main Content -->
     <main class="admin-dashboard">
         <section id="jet-list">
             <h2>Manage Jets</h2>
@@ -81,7 +78,6 @@ $result = $conn->query($query);
 </html>
 
 <?php
-// Close the database connection
 $conn->close();
 ?>
 

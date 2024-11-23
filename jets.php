@@ -2,7 +2,6 @@
 
 require_once 'vendor/autoload.php';
 
-// Include the database connection
 include 'db_connect.php';
 
 // Fetch the jet data and pass it to the Twig template
@@ -34,13 +33,12 @@ if ($result->num_rows > 0) {
 }
 
 // Create a Twig environment
-$loader = new Twig\Loader\FilesystemLoader(__DIR__ . '/templates');  // Corrected path
+$loader = new Twig\Loader\FilesystemLoader(__DIR__ . '/templates');  
 $twig = new Twig\Environment($loader);
 
 // Render the template with the jet data
 echo $twig->render('jets.twig', ['jets' => $jets]);
 
-// Close the database connection
 $conn->close();
 
 ?>

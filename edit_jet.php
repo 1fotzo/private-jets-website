@@ -1,5 +1,4 @@
 <?php
-// Include the database connection
 include 'db_connect.php';
 
 // Check if the jet ID is provided
@@ -36,7 +35,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         echo "<p>Error updating jet: " . $conn->error . "</p>";
     }
 
-    // Close the database connection
     $conn->close();
 }
 ?>

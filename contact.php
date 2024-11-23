@@ -1,5 +1,4 @@
 <?php
-// Include the database connection
 include 'db_connect.php';
 
 // Initialize success message variable
@@ -13,7 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $message = $conn->real_escape_string($_POST['message']);
     $jet_id = isset($_POST['jet_id']) ? (int)$_POST['jet_id'] : null;
 
-    // Insert form data into a 'contacts' table (make sure the table exists in your DB)
+    // Insert form data into a 'contacts' table
     $query = "INSERT INTO contacts (name, email, message, jet_id) VALUES ('$name', '$email', '$message', " . ($jet_id ? $jet_id : 'NULL') . ")";
 
     if ($conn->query($query)) {

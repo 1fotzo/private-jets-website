@@ -1,6 +1,6 @@
 <?php
 session_start();
-include 'db_connect.php'; // Include database connection
+include 'db_connect.php'; 
 
 // Ensure the user is logged in
 if (!isset($_SESSION['user_id'])) {
@@ -70,7 +70,7 @@ $conn->close();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Settings</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="settings.css">
 </head>
 <body>
 <div id="settings-page">

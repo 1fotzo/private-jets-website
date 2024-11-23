@@ -1,6 +1,3 @@
-/* jets */
-
-/* General Reset */
 * {
     margin: 0;
     padding: 0;
@@ -8,7 +5,7 @@
   }
   
   body {
-    font-family: 'Playfair Display', serif; /* Luxury font */
+    font-family: 'Playfair Display', serif; 
     color: #333333;
     background-color: #f8f9fa;
     margin: 0;
@@ -17,7 +14,7 @@
   
 /* Header */
 header {
-  background-color: #1a1a1a; /* Deep black for a luxury look */
+  background-color: #1a1a1a; 
   color: #ffffff;
   padding: 1.5rem 2rem;
   display: flex;
@@ -44,7 +41,7 @@ header nav a {
 }
 
 header nav a:hover {
-  color: #c4a484; /* Gold accent */
+  color: #c4a484; 
 }
   
   /* Search Section */
@@ -66,7 +63,7 @@ header nav a:hover {
     margin-bottom: 2rem;
     text-transform: uppercase;
     letter-spacing: 1px;
-    border-bottom: 2px solid #c4a484; /* Gold accent */
+    border-bottom: 2px solid #c4a484; 
     display: inline-block;
     padding-bottom: 0.5rem;
   }
@@ -102,8 +99,8 @@ header nav a:hover {
   
   .form-group input:focus {
     outline: none;
-    border-color: #c4a484; /* Gold accent */
-    box-shadow: 0 0 8px rgba(196, 164, 132, 0.5); /* Glow effect */
+    border-color: #c4a484; 
+    box-shadow: 0 0 8px rgba(196, 164, 132, 0.5); 
   }
   
   .form-actions {
@@ -113,7 +110,7 @@ header nav a:hover {
   
   form .btn {
     display: inline-block;
-    background-color: #1a1a1a; /* Luxury black */
+    background-color: #1a1a1a; 
     color: #ffffff;
     padding: 0.8rem 2rem;
     border-radius: 6px;
@@ -123,13 +120,13 @@ header nav a:hover {
     letter-spacing: 1px;
     cursor: pointer;
     transition: all 0.4s ease-in-out;
-    text-decoration: none; /* Remove underlining */
+    text-decoration: none; 
   }
   
   form .btn:hover {
-    background-color: #c4a484; /* Gold accent */
+    background-color: #c4a484; 
     color: #ffffff;
-    transform: translateY(-3px); /* Slight hover lift */
+    transform: translateY(-3px); 
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
   }
   
@@ -198,11 +195,11 @@ header nav a:hover {
     text-transform: uppercase;
     letter-spacing: 1px;
     transition: all 0.4s;
-    text-decoration: none; /* Remove underlining */
+    text-decoration: none; 
   }
   
   .jet-card .btn:hover {
-    background-color: #c4a484; /* Gold accent */
+    background-color: #c4a484; 
     color: #ffffff;
   }
   
@@ -240,19 +237,19 @@ footer a:hover {
     position: absolute;
     background-color: #fff;
     border: 1px solid #ccc;
-    z-index: 1000;  /* Ensure it's above other content */
+    z-index: 1000;  
     max-height: 200px;
     overflow-y: auto;
 }
 
 .autocomplete-item {
     padding: 8px;
-    cursor: pointer;  /* Change cursor to hand on hover */
+    cursor: pointer;  
     border-bottom: 1px solid #ddd;
 }
 
 .autocomplete-item:hover {
-    background-color: #f1f1f1;  /* Highlight the item on hover */
+    background-color: #f1f1f1;  
 }
 
 /* Responsive Design */

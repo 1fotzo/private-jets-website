@@ -1,5 +1,4 @@
 <?php
-// Include the database connection
 require_once 'db_connect.php';
 
 // Check if 'model' parameter is set
@@ -21,6 +20,5 @@ if (isset($_GET['model'])) {
     echo json_encode($jets);
 }
 
-// Close the database connection
 $conn->close();
 ?>

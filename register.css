@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100vh; /* Full viewport height */
+  min-height: 100vh; 
   padding: 1rem;
   color: #333;
 }
@@ -16,7 +16,7 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
   width: 100%;
-  max-width: 400px; /* Single centered box width */
+  max-width: 400px; 
 }
 
 #register-page h2 {
@@ -31,9 +31,9 @@
 #register-page form {
   display: flex;
   flex-direction: column;
-  gap: 1rem; /* Space between inputs and buttons */
+  gap: 1rem; 
   width: 100%;
-  align-items: stretch; /* Ensures all elements stretch to fill the width */
+  align-items: stretch; 
 }
 
 #register-page label {
@@ -45,12 +45,12 @@
 #register-page input[type="text"],
 #register-page input[type="email"],
 #register-page input[type="password"] {
-  width: 100%; /* Full width */
+  width: 100%; 
   padding: 0.8rem;
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 1rem;
-  box-sizing: border-box; /* Ensures padding is included in the element's total width */
+  box-sizing: border-box; 
   transition: 0.3s ease;
 }
 
@@ -63,7 +63,7 @@
 }
 
 #register-page button.btn {
-  width: 100%; /* Full width to match the textboxes */
+  width: 100%; 
   background-color: #1a1a1a;
   color: #fff;
   padding: 0.8rem 1.2rem;
@@ -74,7 +74,7 @@
   text-transform: uppercase;
   cursor: pointer;
   transition: 0.3s ease;
-  box-sizing: border-box; /* Ensures padding is included in the element's total width */
+  box-sizing: border-box; 
 }
 
 #register-page button.btn:hover {
@@ -93,7 +93,7 @@
 }
 
 #register-page div a button {
-  width: 100%; /* Consistent width for the link button */
+  width: 100%; 
   background-color: transparent;
   color: #1a1a1a;
   border: 1px solid #1a1a1a;
@@ -104,7 +104,7 @@
   text-transform: uppercase;
   cursor: pointer;
   transition: 0.3s ease;
-  box-sizing: border-box; /* Ensures padding is included in the element's total width */
+  box-sizing: border-box; 
 }
 
 #register-page div a button:hover {

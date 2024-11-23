@@ -1,24 +1,23 @@
-/* Admin Login Specific Styles */
 body {
-    font-family: 'Playfair Display', serif; /* Elegant font */
-    background-color: #f8f9fa; /* Light gray background */
+    font-family: 'Playfair Display', serif; 
+    background-color: #f8f9fa; 
     margin: 0;
     line-height: 1.6;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Full viewport height */
-    flex-direction: column; /* Stack children (header and form) vertically */
+    height: 100vh; 
+    flex-direction: column; 
 }
 
 /* Admin Login Header */
 header {
-    text-align: center; /* Center header text */
-    margin-bottom: 2rem; /* Add space between header and form */
+    text-align: center; 
+    margin-bottom: 2rem; 
 }
 
 .admin-login {
-    background-color: #f8f9fa; /* Keeps background consistent with the site */
+    background-color: #f8f9fa; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,7 +33,7 @@ header {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     max-width: 400px;
     width: 100%;
-    text-align: center; /* Align text to the center */
+    text-align: center; 
 }
 
 /* Form Heading */
@@ -43,7 +42,7 @@ header {
     color: #333333;
     margin-bottom: 2rem;
     font-weight: bold;
-    text-align: center; /* Center align header */
+    text-align: center; 
 }
 
 /* Form Label Styling */
@@ -63,18 +62,18 @@ header {
     border: 1px solid #ccc;
     border-radius: 6px;
     background-color: #f8f9fa;
-    box-sizing: border-box; /* Ensures padding is included in the width */
+    box-sizing: border-box; 
 }
 
 /* Focused Input Field Styling */
 .admin-login input:focus {
-    border-color: #1a1a1a; /* Focus border color */
+    border-color: #1a1a1a; 
     outline: none;
 }
 
 /* Button Styling */
 .admin-login .btn {
-    background-color: #1a1a1a; /* Dark background for the button */
+    background-color: #1a1a1a; 
     color: #ffffff;
     font-weight: bold;
     padding: 1rem 2rem;
@@ -90,7 +89,7 @@ header {
 
 /* Button Hover Styling */
 .admin-login .btn:hover {
-    background-color: #c4a484; /* Hover color - Gold accent */
+    background-color: #c4a484; 
 }
 
 /* Error Message Styling */
